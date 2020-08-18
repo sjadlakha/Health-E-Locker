@@ -85,9 +85,14 @@ html {
 }
 
 .login-inner-box {
+    border-radius: 1rem;
     text-transform: uppercase;
     padding: 1rem 3rem;
     background: var(--peach);
+}
+.login-inner-box:hover {
+    background-color: var(--dark-bg);
+    
 }
 
 .login-box a {
@@ -97,3 +102,7 @@ html {
 }
 
 /* End of Header */
+
+/* Intro */
+
+/* End of Intro */
