@@ -106,3 +106,14 @@ html {
 /* Intro */
 
 /* End of Intro */
+
+.blog{
+    height: 30rem;
+    width: 40rem;
+}
+.row-content {
+    margin: 0px auto;
+    padding: 50px 0px;
+    border-bottom: 1px ridge;
+    min-height: 400px;
+ }
