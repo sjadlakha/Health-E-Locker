@@ -1,44 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Health-E-Locker</title>
-    <link rel="stylesheet" href="./CSS/home_style.css">
+         <!-- Bootstrap CSS -->
+         <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+         <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css"> 
+         <link rel="stylesheet" href="./CSS/home_style.css">   
+    <title>Health-e-Locker</title>
 </head>
-
 <body>
-    <!-- Header -->
-    <section class="header">
-        <div class="header-inner-container">
-            <div class="logo">
-                <a href="./index.html">
-                    <img src="./img/logo.png" alt="logo">
-                </a>
-            </div>
-            <div class="nav-items-container">
-                <div class="nav-item">Home</div>
-                <div class="nav-item"><a href="./components/blog.html">Blog</a></div>
-                <div class="nav-item">About Us</div>
-                <div class="nav-item">Contact Us</div>
-                <div class="login-box">
-                    <a href="./components/login.html">
-                        <div class="login-inner-box">
-                            Login
-                        </div>
-                    </a>
-                </div>
+    <nav class="navbar navbar-expand-sm fixed-top navbar-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="#" class="navbar-brand mr-auto"><img src="./img/logo.png" alt="Health-e-Locker" height="35" width="60"><span class="text-white"> Health-E-Locker</span></a>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <nav class="navbar-nav">
+                    <a href="#" class="nav-link text-white">Home</a>
+                    <a href="" class="nav-link text-white">About us</a>
+                    <a href="./components/blog.html" class="nav-link text-white">Blog</a>
+                    <a href="./components/contactus.html" class="nav-link text-white">Contact us</a>
+                    <button class="btn btn-dark m-auto" type="button">Login</button>
+                </nav>
             </div>
         </div>
-    </section>
-    <!-- End of Header -->
-    <!-- TODO: slideshow of images with text on them use js module-->
-    <!-- Intro -->
-    <section class="intro">
-
-    </section>
-    <!-- End of Intro -->
+    </nav>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>  
 </body>
-
 </html>

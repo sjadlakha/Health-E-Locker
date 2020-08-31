@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../node_modules/bootstrap-social/bootstrap-social.css"> 
+        <link rel="stylesheet" href="../CSS/home_style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm fixed-top navbar-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="#" class="navbar-brand mr-auto"><img src="../img/logo.png" alt="Health-e-Locker" height="35" width="60"><span class="text-white"> Health-E-Locker</span></a>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <nav class="navbar-nav">
+                    <a href="#" class="nav-link text-white">Home</a>
+                    <a href="" class="nav-link text-white">About us</a>
+                    <a href="./components/blog.html" class="nav-link text-white">Blog</a>
+                    <a href="./components/contactus.html" class="nav-link text-white">Contact us</a>
+                    <button class="btn btn-dark m-auto" type="button">Login</button>
+                </nav>
+            </div>
+        </div>
+    </nav>
+<div class="container">
+
+    <div class="row row-content">
+       <div class="col-12">
+          <h3>Location Information</h3>
+       </div>
+        <div class="col-12 col-sm-4 offset-sm-1">
+               <h5>Our Address</h5>
+                <address style="font-size: 100%">
+                  121, Clear Water Bay Road<br>
+                  Clear Water Bay, Kowloon<br>
+                  HONG KONG<br>
+                  <i class="fa fa-phone"></i>: +852 1234 5678<br>
+                  <i class="fa fa-fax"></i>: +852 8765 4321<br>
+                  <i class="fa fa-envelope"></i>:
+                    <a href="mailto:confusion@food.net">confusion@food.net</a>
+               </address>
+        </div>
+        <div class="col-12 col-sm-6 offset-sm-1">
+            <h5>Map of our Location</h5>
+        </div>
+        <div class="col-12 col-sm-11 offset-sm-1">
+            <div class="btn-group" role="group">
+                <a class="btn btn-primary" role="button" href="tel:+85212345678"><i class="fa fa-phone"></i>Call</a>
+                <a class="btn btn-info" role="button" href="#"><i class="fa fa-skype"></i> Skype</a>
+                <a class="btn btn-success" role="button" href="mailto:confusion@food.net"><i class="fa fa-envelope"></i> Mail</a>                                    
+            </div>
+        </div>
+    </div>
+
+    <div class="row row-content">
+       <div class="col-12">
+          <h3>Send us your Feedback</h3>
+       </div>
+        <div class="col-12 col-md-9">
+            <form action="">
+                <div class="form-group row">
+                    <label for="firstname" class="col-12 col-md-2 col-form-label">First Name</label>
+                    <div class="col-12 col-md-10">
+                        <input type="text" id="firstname" name="firstname" class="form-control" placeholder="First Name">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="lastname" class="col-12 col-md-2 col-form-label">Last Name</label>
+                    <div class="col-12 col-md-10">
+                        <input type="text" id="lastname" name="lastname" class="form-control" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="telnum" class="col-12 col-md-2 col-form-label">Contact Tel.</label>
+                    <div class="col-5 col-md-3">
+                        <input type="text" class="form-control" placeholder="Area Code" name="areacode" id="areacode">
+                    </div>
+                    <div class="col-7 col-md-7">
+                        <input type="tel" id="telnum" name="telnum" class="form-control" placeholder="Tel. Number">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="email" class="col-12 col-md-2 col-form-label">Email</label>
+                    <div class="col-12 col-md-10">
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-12 col-md-6 offset-md-2"> 
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" name="approve" id="approve" value="">
+                            <label for="approve" class="form-check-label"><strong>May we contact you?</strong></label>
+                        </div>                                              
+                    </div>
+                    <div class="col-12 col-md-3 offset-md-1">
+                        <select class="form-control">
+                            <option value="">Tel.</option>
+                            <option value="">Email</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="desc" class="col-12 col-md-2 col-form-label">Your Feedback</label>
+                    <div class="col-12 col-md-10">
+                        <textarea name="desc" id="desc" cols="50" rows="12"></textarea>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-12 col-md-10 offset-md-2">
+                        <button type="submit" class="btn btn-primary">
+                            Send Feedback
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+         <div class="col-12 col-md">
+        </div>
+   </div>
+
+</div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
