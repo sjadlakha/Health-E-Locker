@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <!-- Bootstrap CSS -->
+         <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+         <link rel="stylesheet" href="../../node_modules/font-awesome/css/font-awesome.min.css"> 
+         <link rel="stylesheet" href="../../CSS/home_style.css">          
+    <title>Hospital Visit</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm fixed-top navbar-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="#" class="navbar-brand mr-auto"><img src="../../img/logo.png" alt="Health-e-Locker" height="35" width="60"><span class="text-white"> Health-E-Locker</span></a>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <nav class="navbar-nav">
+                    <a href="../../index.html" class="nav-link text-white">Home</a>
+                    <a href="" class="nav-link text-white">About us</a>
+                    <a href="../blog.html" class="nav-link text-white">Blog</a>
+                    <a href="../contactus.html" class="nav-link text-white">Contact us</a>
+                    <button class="btn btn-dark m-auto" type="button">Login</button>
+                </nav>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-12 align-middle">
+                <h3>Add Hospital Visits</h3>
+                <hr>
+            </div>
+        </div>
+        <form action="">
+            <div class="form-group">
+                <label for="hospital">Hospital</label>
+                <input type="text" id="hospital" name="hospital" class="form-control" placeholder="What hospital did you go to?">
+            </div>
+            <div class="form-group">
+                <label for="reason">Reason</label>
+                <input type="text" id="reason" name="reason" class="form-control" placeholder="Why did you go to the hospital?">
+            </div>
+            <div class="row">
+                <div class="form-group col-12 col-sm-6">
+                    <label for="dateadmis">Admission Date</label>
+                    <input type="date" id="dateadmis" name="dateadmis" class="form-control">
+                </div>
+                <div class="form-group col-12 col-sm-6">
+                    <label for="timeadmis">Admission Time</label>
+                    <input type="time" id="timeadmis" name="timeadmis" class="form-control">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-12 col-sm-6">
+                    <label for="datedischarge">Discharge Date</label>
+                    <input type="date" id="datedischarge" name="datedischarge" class="form-control">
+                </div>
+                <div class="form-group col-12 col-sm-6">
+                    <label for="timedischarge">Discharge Time</label>
+                    <input type="time" id="timedischarge" name="timedischarge" class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="note">Add a note</label>
+                <input type="text" id="note" name="note" class="form-control" placeholder="Anything to add?">
+            </div>
+            <div class="form-group">
+                <label for="file">Upload Document</label><br>
+                <input type="file" id="file" name="file">
+            </div>
+           <div class="d-flex justify-content-center pb-5">
+                <button type="submit" class="btn btn-dark align-middle">Save</button>
+           </div>
+        </form>
+    </div>
+
+     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+     <script src="../../node_modules/jquery/dist/jquery.slim.min.js"></script>
+     <script src="../../node_modules/popper.js/dist/umd/popper.min.js"></script>
+     <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

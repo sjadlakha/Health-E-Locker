@@ -1,108 +1,17 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif;
-    list-style-type: none;
-    text-decoration: none;
-    box-sizing: border-box;
-    outline: none;
-    background-color: var(--light);
+body {
+    padding: 50px 0px 0px 0px;
+    z-index: 0; }
+  
+  .navbar-light {
+    background-color: green; }
+
+.blog{
+    height: 30rem;
+    width: 40rem;
 }
-
-html {
-    font-size: 62.5%;
-    /* to decrease the font size of 1 rem to 10px which is by default 60px */
-}
-
-/* Important colors */
-
-:root {
-    --blue: #007bff;
-    --indigo: #6610f2;
-    --purple: #6f42c1;
-    --pink: #e83e8c;
-    --red: #dc3545;
-    --orange: #fd7e14;
-    --yellow: #ffc107;
-    --green: #28a745;
-    --teal: #20c997;
-    --cyan: #17a2b8;
-    --white: #fff;
-    --gray: #6c757d;
-    --gray-dark: #343a40;
-    --primary: #007bff;
-    --secondary: #6c757d;
-    --success: #28a745;
-    --info: #17a2b8;
-    --warning: #ffc107;
-    --danger: #dc3545;
-    --light: #f8f9fa;
-    --dark: #343a40;
-    --breakpoint-xs: 0;
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;
-    --peach: #c8a294;
-    --dark-bg: #4d273f;
-}
-
-/* Header */
-
-.header-inner-container {
-    display: flex;
-}
-
-.logo {
-    margin: 1rem 5rem;
-}
-
-.logo img {
-    height: 7rem;
-}
-
-.nav-items-container {
-    display: flex;
-    font-size: 2rem;
-    align-items: center;
-    padding-top: 1rem;
-    margin-left: 65rem;
-}
-
-.nav-item {
-    color: var(--dark);
-    margin-left: 3rem;
-    cursor: pointer;
-}
-
-.nav-item:hover {
-    color: var(--peach);
-}
-
-.login-box {
-    margin-left: 3rem;
-    
-}
-
-.login-inner-box {
-    border-radius: 1rem;
-    text-transform: uppercase;
-    padding: 1rem 3rem;
-    background: var(--peach);
-}
-.login-inner-box:hover {
-    background-color: var(--dark-bg);
-    
-}
-
-.login-box a {
-    text-decoration: none;
-    color: var(--light);
-    background: var(--peach);
-}
-
-/* End of Header */
-
-/* Intro */
-
-/* End of Intro */
+.row-content {
+    margin: 0px auto;
+    padding: 50px 0px;
+    border-bottom: 1px ridge;
+    min-height: 400px;
+ }
