@@ -6,8 +6,8 @@ body {
     background-color:#228B22; }
 
 .blog{
-    height: 30rem;
-    width: 40rem;
+    height: 20rem;
+    width: 30rem;
 }
 .row-content {
     margin: 0px auto;
@@ -22,7 +22,7 @@ body {
     color: #228B22;
  }
 
-.card-body{
+.card-align{
     display: flex;
     flex-direction: column;
     align-items: center;
