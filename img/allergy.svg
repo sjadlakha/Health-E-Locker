@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="43" height="41.3" viewBox="0 0 43 41.3">
+  <g id="pollen_f" transform="translate(-4 -5.7)">
+    <circle id="Ellipse_141" data-name="Ellipse 141" cx="1" cy="1" r="1" transform="translate(27 45)" fill="#5540b7"/>
+    <circle id="Ellipse_142" data-name="Ellipse 142" cx="1" cy="1" r="1" transform="translate(36 35)" fill="#5540b7"/>
+    <circle id="Ellipse_143" data-name="Ellipse 143" cx="1" cy="1" r="1" transform="translate(27 35)" fill="#5540b7"/>
+    <circle id="Ellipse_144" data-name="Ellipse 144" cx="1" cy="1" r="1" transform="translate(36 26)" fill="#5540b7"/>
+    <circle id="Ellipse_145" data-name="Ellipse 145" cx="1" cy="1" r="1" transform="translate(45 26)" fill="#5540b7"/>
+    <path id="Path_320" data-name="Path 320" d="M4,9H6.5a10.734,10.734,0,0,1,5.8,1.8A5.008,5.008,0,0,1,13,10l.7-.7A12.6,12.6,0,0,0,6.5,7H4Z" fill="#5540b7"/>
+    <path id="Path_321" data-name="Path 321" d="M20,38h0a1.087,1.087,0,0,1-1-.7,27.6,27.6,0,0,0-6.7-10.6A12.3,12.3,0,0,1,29.7,9.3C35.2,14.9,40,15,40,15a1.2,1.2,0,0,1,1,.7.949.949,0,0,1-.4,1.1c-.2.1-4.9,3.1-9,3.2a62.226,62.226,0,0,1,.4,8,1,1,0,0,1-1,1,62.37,62.37,0,0,1-7.9-.4,35.008,35.008,0,0,1-2.2,8.8A.875.875,0,0,1,20,38Z" fill="#5540b7"/>
+  </g>
+</svg>
