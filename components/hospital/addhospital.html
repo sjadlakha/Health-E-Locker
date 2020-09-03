@@ -34,7 +34,7 @@
                 <hr>
             </div>
         </div>
-        <form action="../Alldoc.html">
+        <form id="hospform" action="../Alldoc.html">
             <div class="form-group">
                 <label for="hospital">Hospital</label>
                 <input type="text" id="hospital" name="hospital" class="form-control" placeholder="What hospital did you go to?">
@@ -72,7 +72,7 @@
                 <input type="file" id="file" name="file">
             </div>
            <div class="d-flex justify-content-center pb-5">
-                <button type="submit" class="btn btn-dark align-middle">Save</button>
+                <button type="submit" class="btn btn-dark align-middle" id="btnsubmit">Save</button>
            </div>
         </form>
     </div>
@@ -81,5 +81,6 @@
      <script src="../../node_modules/jquery/dist/jquery.slim.min.js"></script>
      <script src="../../node_modules/popper.js/dist/umd/popper.min.js"></script>
      <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+     <script src="../../JS/hospitalvisit.js"></script>
 </body>
 </html>

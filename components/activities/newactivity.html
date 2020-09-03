@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How To Use Health-E-Locker</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="../../CSS/home_style.css">
+    
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm fixed-top navbar-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="#" class="navbar-brand mr-auto"><img src="../../img/logo.png" alt="Health-e-Locker" height="35"
+                    width="60"><span class="text-white"> Health-E-Locker</span></a>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <nav class="navbar-nav">
+                    <a href="../dashboard.html" class="nav-link text-white">Dashboard</a>
+                    <a href="./components/blog.html" class="nav-link text-white">Blog</a>
+                    <a href="./components/contactus.html" class="nav-link text-white">Contact us</a>
+                    <button class="btn btn-dark m-auto" type="button">Logout</button>
+                </nav>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+
+        <a href="./activities.html">
+
+            <button class="btn btn-dark">Back</button>
+        </a>
+        <div class="text-center pb-3 font-weight-bold">Add Activity</div>
+        <form>
+            <div class="form-group row">
+                <label for="inputactivity" class="col-sm-2 col-form-label">Activity Type</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputactivity"
+                        placeholder="Sleep/Running/Cycling/Weight/Hydration">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputStartDate" class="col-sm-2 col-form-label">Start Date</label>
+                <div class="col-sm-10">
+                    <input type="date" class="form-control" id="inputStartDate">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputStartTime" class="col-sm-2 col-form-label">Start Time</label>
+                <div class="col-sm-10">
+                    <input type="time" class="form-control" id="inputStartTime">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="duration" class="col-sm-2 col-form-label">Duration</label>
+                <div class="col-sm-10">
+                    <input type="time" class="form-control" id="duration">
+                </div>
+            </div>
+            <div class="form-group row justify-content-center">
+                <div class="col-sm-10">
+                    <textarea class="form-control" id="activityNotes" placeholder="Notes"></textarea>
+                </div>
+            </div>
+        </form>
+
+            <button class="btn btn-outline-success" onclick="window.location.href='./activities.html'"  id="doneBtn">Done</button>
+
+    </div>
+
+    <script src="../../JS/newactivity.js"></script>
+</body>
+
+</html>

@@ -19,10 +19,10 @@
             <a href="#" class="navbar-brand mr-auto"><img src="../img/logo.png" alt="Health-e-Locker" height="35" width="60"><span class="text-white"> Health-E-Locker</span></a>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <nav class="navbar-nav">
-                    <a href="#" class="nav-link text-white">Home</a>
-                    <a href="" class="nav-link text-white">About us</a>
-                    <a href="./components/blog.html" class="nav-link text-white">Blog</a>
-                    <a href="./components/contactus.html" class="nav-link text-white">Contact us</a>
+                    <a href="../index.html" class="nav-link text-white">Home</a>
+                    <a href="./tutorial.html" class="nav-link text-white">User Guide</a>
+                    <a href="./blog.html" class="nav-link text-white">Blog</a>
+                    <a href="#" class="nav-link text-white">Contact us</a>
                     <button class="btn btn-dark m-auto" type="button">Login</button>
                 </nav>
             </div>
@@ -67,7 +67,7 @@
                 <div class="form-group row">
                     <label for="firstname" class="col-12 col-md-2 col-form-label">First Name</label>
                     <div class="col-12 col-md-10">
-                        <input type="text" id="firstname" name="firstname" class="form-control" placeholder="First Name">
+                        <input type="text" id="firstname" name="firstname" class="form-control" placeholder="First Name" required>
                     </div>
                 </div>
                 <div class="form-group row">
@@ -82,13 +82,13 @@
                         <input type="text" class="form-control" placeholder="Area Code" name="areacode" id="areacode">
                     </div>
                     <div class="col-7 col-md-7">
-                        <input type="tel" id="telnum" name="telnum" class="form-control" placeholder="Tel. Number">
+                        <input type="tel" id="telnum" name="telnum" class="form-control" placeholder="Tel. Number" required>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="email" class="col-12 col-md-2 col-form-label">Email</label>
                     <div class="col-12 col-md-10">
-                        <input type="email" id="email" name="email" class="form-control" placeholder="Email">
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Email" required>
                     </div>
                 </div>
                 <div class="form-group row">
@@ -108,12 +108,12 @@
                 <div class="form-group row">
                     <label for="desc" class="col-12 col-md-2 col-form-label">Your Feedback</label>
                     <div class="col-12 col-md-10">
-                        <textarea name="desc" id="desc" cols="50" rows="12"></textarea>
+                        <textarea name="desc" id="desc" cols="50" rows="12" required></textarea>
                     </div>
                 </div>
                 <div class="form-group row">
                     <div class="col-12 col-md-10 offset-md-2">
-                        <button type="submit" class="btn btn-primary">
+                        <button type="submit" class="btn btn-dark">
                             Send Feedback
                         </button>
                     </div>
