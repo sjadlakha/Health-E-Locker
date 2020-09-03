@@ -23,45 +23,54 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="../CSS/login.css">
-    <title>Health-e-Locker Login</title>
+    <title>Health-e-Locker Sign Up</title>
 </head>
 
 </head>
 
 <body>
-    <div >
-        <div class="figure">
+    <div>
+        <div class="figure ml-5 mt-3">
 
-            <img src="../img/logo.png" alt="" height="70px" class="figure-img">
-            <div class="fig-caption text-muted"> Health-E-Locker</div>
+            <img src="../img/logo.png" alt="" height="70px" class="figure-img pl-3">
+            <div class="fig-caption text-muted pl-1"> Health-E-Locker</div>
         </div>
-       
+
     </div>
-    <h2 class="text-center">User Login</h2>
+    <h2 class="text-center">Sign Up</h2>
 
-    <form action="/action_page.php" method="post">
-        <div class="imgcontainer">
-            <img src="../img/user_animated.png" alt="Avatar" class="avatar">
-        </div>
+    <form id="signUpForm">
 
         <div class="container">
             <label for="uname"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
+            <input type="text" placeholder="Enter Username" name="uname" required id="username">
 
             <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
+            <input type="password" placeholder="Enter Password" name="psw" required id="pswd">
 
-            <a href="./dashboard.html">
-                <button type="submit">Login</button>
-            </a>
+            <label for="repsw"><b>Re-Enter Password</b></label>
+            <input type="password" placeholder="Re-Enter Password" name="repsw" id="repswd" required>
+
+
+            <button  class="text-uppercase btn btn-success" id="signupBtn">sign up</button>
 
         </div>
-
         <div class="container" style="background-color:#f1f1f1">
-            <button type="button" class="cancelbtn">Cancel</button>
-            <span class="psw"><a href="./signup.html">New User?</a></span>
+
+                <button type="button" class=" btn-dark btn" id="cntBtn" onclick="window.location.href='./dashboard.html'" disabled>Continue</button>
+
         </div>
+        <div class="container" style="background-color:#f1f1f1">
+            <button type="button" class=" btn-danger btn " onclick="window.location.href = '../index.html'">
+
+                Cancel
+
+            </button>
+        </div>
+
     </form>
+
+    <script src="../JS/signup.js"></script>
 
 </body>
 
