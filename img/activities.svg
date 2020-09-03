@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="39" height="43" viewBox="0 0 39 43">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#5540b7}
+        </style>
+    </defs>
+    <g id="prefix__run_f" transform="translate(-5 -3)">
+        <path id="prefix__Path_339" d="M30 7.5A4.5 4.5 0 1 0 34.5 3 4.5 4.5 0 0 0 30 7.5z" class="prefix__cls-1" data-name="Path 339"/>
+        <path id="prefix__Path_340" d="M33.34 31.508l-5.4-4.788 4.67-9.234-1.416-4.242-2.507-1.4-8.167-1.777-1.633.256-6.929 4.972 2.331 3.234 5.994-4.31 4.409 1.4-4.934 8.042 1.411 5.885 7.586 4.68-1.706 8.784 4.908.952 2.027-10.672z" class="prefix__cls-1" data-name="Path 340"/>
+        <circle id="prefix__Ellipse_160" cx="2.5" cy="2.5" r="2.5" class="prefix__cls-1" data-name="Ellipse 160" transform="translate(27 41)"/>
+        <circle id="prefix__Ellipse_161" cx="2" cy="2" r="2" class="prefix__cls-1" data-name="Ellipse 161" transform="translate(11 15)"/>
+        <circle id="prefix__Ellipse_162" cx="2" cy="2" r="2" class="prefix__cls-1" data-name="Ellipse 162" transform="translate(18 10)"/>
+        <circle id="prefix__Ellipse_163" cx="3" cy="3" r="3" class="prefix__cls-1" data-name="Ellipse 163" transform="translate(27 13)"/>
+        <circle id="prefix__Ellipse_164" cx="2" cy="2" r="2" class="prefix__cls-1" data-name="Ellipse 164" transform="translate(30 31)"/>
+        <circle id="prefix__Ellipse_165" cx="4" cy="4" r="4" class="prefix__cls-1" data-name="Ellipse 165" transform="translate(19 22)"/>
+        <path id="prefix__Path_341" d="M42 23h-6l-1.787-4.257-2.241 4.429 1.209 2.666.012.008A2 2 0 0 0 35 27h7a2 2 0 0 0 0-4z" class="prefix__cls-1" data-name="Path 341"/>
+        <path id="prefix__Path_342" d="M20.048 31.2a6 6 0 0 1-2.53-2.788L15.242 32H7.5a2.5 2.5 0 0 0 0 5h8.432a4 4 0 0 0 3.268-1.687l2.285-3.224z" class="prefix__cls-1" data-name="Path 342"/>
+    </g>
+</svg>
