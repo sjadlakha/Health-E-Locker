@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
         <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../node_modules/bootstrap-social/bootstrap-social.css"> 
-    <link rel="stylesheet" href="../CSS/home_style.css">
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/bootstrap-social/bootstrap-social.css"> 
+    <link rel="stylesheet" href="/CSS/home_style.css">
 
     <title>Blog</title>
 </head>
@@ -18,20 +18,20 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a href="#" class="navbar-brand mr-auto"><img src="../img/logo.png" alt="Health-e-Locker" height="35" width="60"><span class="text-white"> Health-E-Locker</span></a>
+            <a href="#" class="navbar-brand mr-auto"><img src="/img/logo.png" alt="Health-e-Locker" height="35" width="60"><span class="text-white"> Health-E-Locker</span></a>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <nav class="navbar-nav">
                     <a href="#" class="nav-link text-white">Dashboard</a>
-                    <a href="./blog.html" class="nav-link text-white">Blog</a>
-                    <a href="./contactus.html" class="nav-link text-white">Contact us</a>
-                    <button class="btn btn-dark m-auto" type="button">Logout</button>
+                    <a href="/blog" class="nav-link text-white">Blog</a>
+                    <a href="/contactus" class="nav-link text-white">Contact us</a>
+                    <a href="/logout"><button class="btn btn-dark m-auto" type="button">Logout</button></a>
                 </nav>
             </div>
         </div>
     </nav>
     <header class="jumbotron container-fluid">
         <div class="container align-self-center">
-            <h2>Welcome *User*!</h2>
+            <h2>Welcome <%=username%></h2>
         </div>
     </header>
     <div class="container mt-5 mb-5">
@@ -40,24 +40,24 @@
                 <div class="card-body card-align">
                     <h5 class="card-title">All Documents</h5>
                     <hr>
-                    <img src="../img/doc.svg" alt="">
-                    <a href="./Alldoc.html" class="stretched-link"></a>
+                    <img src="/img/doc.svg" alt="">
+                    <a href="/alldoc" class="stretched-link"></a>
                 </div>
             </div>
             <div class="card col-12 col-sm-4">
                 <div class="card-body card-align">
                     <h5 class="card-title">Symptoms</h5>
                     <hr>
-                    <img src="../img/symptom-timeline_f.svg" alt="">
-                    <a href="../components/symptoms/addSymptom.html" class="stretched-link"></a>
+                    <img src="/img/symptom-timeline_f.svg" alt="">
+                    <a href="/addSymptom" class="stretched-link"></a>
                 </div>
             </div>
             <div class="card col-12 col-sm-4">
                 <div class="card-body card-align">
                     <h5 class="card-title">Allergies</h5>
                     <hr>
-                    <img src="../img/allergy.svg" alt="">
-                    <a href="./allergies/addalergy.html" class="stretched-link"></a>
+                    <img src="/img/allergy.svg" alt="">
+                    <a href="/addAllergy" class="stretched-link"></a>
                 </div>
             </div>
         </div>
@@ -66,24 +66,24 @@
                 <div class="card-body card-align">
                     <h5 class="card-title">Immunisation</h5>
                     <hr>
-                    <img src="../img/immune.svg" alt="">
-                    <a href="./immunisation/addimmu.html" class="stretched-link"></a>
+                    <img src="/img/immune.svg" alt="">
+                    <a href="/addImmu" class="stretched-link"></a>
                 </div>
             </div>
             <div class=" card col-12 col-sm-4">
                 <div class="card-body card-align">
                     <h5 class="card-title">Medication</h5>
                     <hr>
-                    <img src="../img/medicine.svg" alt="">
-                    <a href="./medications/addmedication.html" class="stretched-link"></a>
+                    <img src="/img/medicine.svg" alt="">
+                    <a href="/addMedication" class="stretched-link"></a>
                 </div>
             </div>
             <div class="card col-12 col-sm-4">
                 <div class="card-body card-align">
                     <h5 class="card-title">Hospital Visits</h5>
                     <hr>
-                    <img src="../img/doctor_visit.svg" alt="">
-                    <a href="./hospital/addhospital.html" class="stretched-link"></a>
+                    <img src="/img/doctor_visit.svg" alt="">
+                    <a href="/addHospital" class="stretched-link"></a>
                 </div>
             </div>
         </div>
@@ -92,8 +92,8 @@
                 <div class="card-body card-align">
                     <h5 class="card-title">Activities</h5>
                     <hr>
-                    <img src="../img/activities.svg" alt="">
-                    <a href="./activities/activities.html" class="stretched-link"></a>
+                    <img src="/img/activities.svg" alt="">
+                    <a href="/activities" class="stretched-link"></a>
                 </div>
             </div>
             <div class="col-12 col-sm-4">
@@ -104,8 +104,8 @@
     </div>
     
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-    <script src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/jquery/dist/jquery.slim.min.js"></script>
+    <script src="/popper.js/dist/umd/popper.min.js"></script>
+    <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>

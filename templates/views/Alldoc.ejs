@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/bootstrap-social/bootstrap-social.css"> 
+    <link rel="stylesheet" href="/CSS/home_style.css">
+
+    <title>Blog</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm fixed-top navbar-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="#" class="navbar-brand mr-auto"><img src="/img/logo.png" alt="Health-e-Locker" height="35" width="60"><span class="text-white"> Health-E-Locker</span></a>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <nav class="navbar-nav">
+                    <a href="/dashboard" class="nav-link text-white">Dashboard</a>
+                    <a href="/blog" class="nav-link text-white">Blog</a>
+                    <a href="/contactus" class="nav-link text-white">Contact us</a>
+                    <button class="btn btn-dark m-auto" type="button">Logout</button>
+                </nav>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row card my-3">
+            <div class="card-body card-align">
+                <h5 class="card-title">All Documents</h5>
+            </div>
+        </div>
+        <div class="row card my-4">
+            <div class="card-header">
+                Allergies
+            </div>
+            <% allergies.forEach((allergy)=>{%>
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <h5 class="card-title"><%=allergy.allergen%></h5>
+                    <% if(!allergy.doc.length==0){%>
+                    <a href="/alldoc/Allergy/<%=allergy._id%>">Open</a>
+                    <%}%>
+                </div>
+                <p class="card-subtitle"><%=allergy.dateidentified%></p>
+                <p class="card-text"><%=allergy.reactions%></p>
+                <p class="card-text"><%=allergy.severity%></p>
+            </div>
+            <%});%>
+        </div>
+        <div class="row card my-4">
+            <div class="card-header">
+                Symptoms
+            </div>
+            <% symptoms.forEach((symptom)=>{%>
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <h5 class="card-title"><%=symptom.symptom%></h5>
+                    <a href="/alldoc/Symptom/<%=symptom._id%>">Open</a>
+                </div>
+                <p class="card-subtitle"><%=symptom.dateOccurred%></p>
+                <p class="card-text"><%=symptom.severity%></p>
+                <p class="card-text"><%=symptom.context%></p>
+                <p class="card-text"><%=symptom.note%></p>
+            </div>
+            <%});%>
+        </div>
+        <div class="row card my-4">
+            <div class="card-header">
+                Medications
+            </div>
+            <% medications.forEach((medication)=>{%>
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <h5 class="card-title"><%=medication.medicine%></h5>
+                    <a href="/alldoc/Medication/<%=medication._id%>">Open</a>
+                </div>
+                <p class="card-subtitle"><%=medication.prescribedDate%></p>
+                <p class="card-text"><%=medication.doseInfo%></p>
+                <p class="card-text"><%=medication.reason%></p>
+                <p class="card-text"><%=medication.note%></p>
+            </div>
+            <%});%>
+        </div>
+        <div class="row card my-4">
+            <div class="card-header">
+               Immunisation
+            </div>
+            <% immunisations.forEach((immune)=>{%>
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <h5 class="card-title"><%=immune.vaccine%></h5>
+                    <a href="/alldoc/Immune/<%=immune._id%>">Open</a>
+                </div>
+                <p class="card-subtitle"><%=immune.dateTaken%></p>
+                <p class="card-text"><%=immune.dateTaken%></p>
+            </div>
+            <%});%>
+        </div>
+        <div class="row card my-4">
+            <div class="card-header">
+                Hospital Visits
+            </div>
+            <% hospitals.forEach((hospital)=>{%>
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <h5 class="card-title"><%=hospital.hospitalName%></h5>
+                    <a href="/alldoc/Hospital/<%=hospital._id%>">Open</a>
+                </div>
+                <p class="card-subtitle"><%=hospital.admissionDate%></p>
+                <p class="card-text"><%=hospital.note%></p>
+            </div>
+            <%});%>
+        </div>
+
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="/jquery/dist/jquery.slim.min.js"></script>
+    <script src="/popper.js/dist/umd/popper.min.js"></script>
+    <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

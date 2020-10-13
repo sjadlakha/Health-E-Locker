@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <!-- Bootstrap CSS -->
-         <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
-         <link rel="stylesheet" href="../../node_modules/font-awesome/css/font-awesome.min.css"> 
-         <link rel="stylesheet" href="../../CSS/home_style.css">          
+         <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+         <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css"> 
+         <link rel="stylesheet" href="/CSS/home_style.css">          
     <title>Immunisation</title>
 </head>
 <body>
@@ -15,12 +15,12 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a href="#" class="navbar-brand mr-auto"><img src="../../img/logo.png" alt="Health-e-Locker" height="35" width="60"><span class="text-white"> Health-E-Locker</span></a>
+            <a href="#" class="navbar-brand mr-auto"><img src="/img/logo.png" alt="Health-e-Locker" height="35" width="60"><span class="text-white"> Health-E-Locker</span></a>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <nav class="navbar-nav">
-                    <a href="../dashboard.html" class="nav-link text-white">Dashboard</a>
-                    <a href="./components/blog.html" class="nav-link text-white">Blog</a>
-                    <a href="./components/contactus.html" class="nav-link text-white">Contact us</a>
+                    <a href="/dashboard" class="nav-link text-white">Dashboard</a>
+                    <a href="/blog" class="nav-link text-white">Blog</a>
+                    <a href="/contactus" class="nav-link text-white">Contact us</a>
                     <button class="btn btn-dark m-auto" type="button">Logout</button>
                 </nav>
             </div>
@@ -34,23 +34,19 @@
                 <hr>
             </div>
         </div>
-        <form id="immuneform" action="../Alldoc.html">
+        <form id="immuneform" action="/addImmu" method="POST" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="med">Vaccine</label>
-                <input type="text" id="med" name="med" class="form-control" placeholder="What immunisations did you get?">
+                <input type="text" id="med" name="vaccine" class="form-control" placeholder="What immunisations did you get?">
             </div>
             <div class="form-group">
                 <label for="dose">Protection Against</label>
-                <input type="text" id="dose" name="dose" class="form-control" placeholder="What does the vaccine protect against?">
+                <input type="text" id="dose" name="protection" class="form-control" placeholder="What does the vaccine protect against?">
             </div>
             <div class="row">
-                <div class="form-group col-12 col-sm-6">
-                    <label for="date">Date</label>
+                <div class="form-group col-12">
+                    <label for="date">Date Taken </label>
                     <input type="date" id="date" name="date" class="form-control">
-                </div>
-                <div class="form-group col-12 col-sm-6">
-                    <label for="time">Time</label>
-                    <input type="time" id="time" name="time" class="form-control">
                 </div>
             </div>
             <div class="form-group">
@@ -68,9 +64,9 @@
     </div>
 
      <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-     <script src="../../node_modules/jquery/dist/jquery.slim.min.js"></script>
-     <script src="../../node_modules/popper.js/dist/umd/popper.min.js"></script>
-     <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-     <script src="../../JS/immune.js"></script>
+     <script src="/jquery/dist/jquery.slim.min.js"></script>
+     <script src="/popper.js/dist/umd/popper.min.js"></script>
+     <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+     <script src="/JS/immune.js"></script>
 </body>
 </html>

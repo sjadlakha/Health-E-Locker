@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <!-- Bootstrap CSS -->
-         <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
-         <link rel="stylesheet" href="../../node_modules/font-awesome/css/font-awesome.min.css">
-         <link rel="stylesheet" href="../../CSS/home_style.css">
+         <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+         <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+         <link rel="stylesheet" href="/CSS/home_style.css">
     <title>Allergy</title>
 </head>
 <body>
@@ -15,12 +15,12 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a href="#" class="navbar-brand mr-auto"><img src="../../img/logo.png" alt="Health-e-Locker" height="35" width="60"><span class="text-white"> Health-E-Locker</span></a>
+            <a href="#" class="navbar-brand mr-auto"><img src="/img/logo.png" alt="Health-e-Locker" height="35" width="60"><span class="text-white"> Health-E-Locker</span></a>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <nav class="navbar-nav">
-                    <a href="../dashboard.html" class="nav-link text-white">Dashboard</a>
-                    <a href="./components/blog.html" class="nav-link text-white">Blog</a>
-                    <a href="./components/contactus.html" class="nav-link text-white">Contact us</a>
+                    <a href="/dashboard" class="nav-link text-white">Dashboard</a>
+                    <a href="/blog" class="nav-link text-white">Blog</a>
+                    <a href="/contactus" class="nav-link text-white">Contact us</a>
                     <button class="btn btn-dark m-auto" type="button">Logout</button>
                 </nav>
             </div>
@@ -36,7 +36,7 @@
                 <hr>
             </div>
         </div>
-        <form id="alergyform" action="../Alldoc.html">
+        <form id="alergyform" method="POST" action="/addAllergy" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="allergen">Allergen</label>
                 <input type="text" id="allergen" name="allergen" class="form-control" placeholder="What caused the reaction? eg. Peanuts">
@@ -52,19 +52,19 @@
             <div class="form-group">
                 <label for="">Severity</label>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="Severity" id="mild" value="Mild" checked>
+                    <input class="form-check-input" type="radio" name="severity" id="mild" value="Mild" checked>
                     <label class="form-check-label" for="mild">
                      Mild
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="Severity" id="Moderate" value="Moderate">
+                    <input class="form-check-input" type="radio" name="severity" id="Moderate" value="Moderate">
                     <label class="form-check-label" for="Moderate">
                       Moderate
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="Severity" id="severe" value="Severe">
+                    <input class="form-check-input" type="radio" name="severity" id="severe" value="Severe">
                     <label class="form-check-label" for="severe">
                       Severe
                     </label>
@@ -85,9 +85,9 @@
     </div>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-    <script src="../../node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="../../node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="../../JS/allergy.js"></script>
+    <script src="/jquery/dist/jquery.slim.min.js"></script>
+    <script src="/popper.js/dist/umd/popper.min.js"></script>
+    <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/JS/allergy.js"></script>
 </body>
 </html>
