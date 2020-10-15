@@ -103,7 +103,7 @@ app.get('/logout',(req,res)=>{
 
 //get dashboard
 app.get('/dashboard',auth,(req,res)=>{
-    res.render('dashboard',{username:req.user._id})
+    res.render('dashboard',{username:req.user.username})
 })
 
 // symptom
@@ -250,15 +250,18 @@ app.post('/newActivity',auth,async (req,res)=>{
         })
         await activity.save()
         res.redirect('/activities')
+        console.log('Activity Added Successfuly')
     } catch(e){
         console.log(e)
         res.redirect('/newActivity')
+        console.log('ERROR:' + e)
     }
 })
 
 //blog
 app.get('/blog',auth,(req,res)=>{
     res.render('blog')
+    // api to be added : https://newsapi.org
 })
 
 //contactus
