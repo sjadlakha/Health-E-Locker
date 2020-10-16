@@ -44,9 +44,36 @@
         </div>
     </nav>
 
-    <div class="container py-5">
-        <div class="card-group">
-            <div class="card" >
+    <div class="container">
+            <div class="row card my-3">
+                <a href="/newactivity">
+                    <div class="card-body card-align">
+                        <h5 class="card-title">Add Activity</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="row card my-3">
+                <div class="card-body card-align">
+                    <h5 class="card-title">All Activities</h5>
+                </div>
+            </div>
+            <div class="row card my-4">
+                <div class="card-header">
+                    Activities
+                </div>
+                <% activities.forEach((activity)=>{%>
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <h5 class="card-title">Activity - <%=activity.activityType%></h5>
+                    </div>
+                    <p class="card-subtitle">Start Date - <%=activity.startDate%></p>
+                    <p class="card-text">Start Time - <%=activity.startTime%></p>
+                    <p class="card-text">Duration - <%=activity.duration%></p>
+                    <p class="card-text">Note - <%=activity.note%></p>
+                </div>
+                <%});%>
+            </div>
+            <!-- <div class="card" >
                 <img class="card-img-top py-3 pl-3" src="/img/sleep.jpg" alt="Card image cap" style="width: 95%;">
                 <div class="card-body">
                     <h5 class="card-title">Sleep</h5>
@@ -76,8 +103,7 @@
                     
                 </div>
                 
-            </div>
-        </div>
+            </div> -->
     </div>
 
 </body>

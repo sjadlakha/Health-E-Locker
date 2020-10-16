@@ -114,17 +114,30 @@ app.get('/addSymptom',auth,(req,res)=>{
 
 app.post('/addSymptom',auth,upload.single('file'),async (req,res)=>{
     try{
-        const symptom=new Symptom({
-            owner:req.user._id,
-            symptom:req.body.symptom,
-            dateOccurred:req.body.date,
-            severity:req.body.severity,
-            duration:req.body.duration,
-            note:req.body.note,
-            doc:req.file.buffer,
-            context:req.body.context
-        })
-        await symptom.save()
+        if(req.file==undefined){
+            const symptom=new Symptom({
+                owner:req.user._id,
+                symptom:req.body.symptom,
+                dateOccurred:req.body.date,
+                severity:req.body.severity,
+                duration:req.body.duration,
+                note:req.body.note,
+                context:req.body.context
+            })
+            await symptom.save()
+        } else {
+            const symptom=new Symptom({
+                owner:req.user._id,
+                symptom:req.body.symptom,
+                dateOccurred:req.body.date,
+                severity:req.body.severity,
+                duration:req.body.duration,
+                note:req.body.note,
+                doc:req.file.buffer,
+                context:req.body.context
+            })
+            await symptom.save()
+        }
         res.redirect('/alldoc')
     } catch (e) {
         console.log(e)
@@ -139,16 +152,28 @@ app.get('/addAllergy',auth,(req,res)=>{
 
 app.post('/addAllergy',auth,upload.single('file'),async (req,res)=>{
     try{
-        const allergy=new Allergy({
-            owner:req.user._id,
-            allergen:req.body.allergen,
-            reactions:req.body.reactions,
-            dateidentified:req.body.dateidenty,
-            severity:req.body.severity,
-            note: req.body.note,
-            doc:req.file.buffer
-        })
-        await allergy.save()
+        if(req.file==undefined){
+            const allergy=new Allergy({
+                owner:req.user._id,
+                allergen:req.body.allergen,
+                reactions:req.body.reactions,
+                dateidentified:req.body.dateidenty,
+                severity:req.body.severity,
+                note: req.body.note,
+            })
+            await allergy.save()
+        } else {
+            const allergy=new Allergy({
+                owner:req.user._id,
+                allergen:req.body.allergen,
+                reactions:req.body.reactions,
+                dateidentified:req.body.dateidenty,
+                severity:req.body.severity,
+                note: req.body.note,
+                doc:req.file.buffer
+            })
+            await allergy.save()
+        }
         res.redirect('/alldoc')
     } catch(e){
         console.log(e)
@@ -164,17 +189,30 @@ app.get('/addMedication',auth,(req,res)=>{
 
 app.post('/addMedication',auth,upload.single('file'),async (req,res)=>{
     try{
-        const med=new Medication({
-            owner:req.user._id,
-            medicine:req.body.med,
-            doseInfo:req.body.dose,
-            reason: req.body.reason,
-            prescribedDate:req.body.datep,
-            prescribedEndDate:req.body.datef,
-            note: req.body.note,
-            doc:req.file.buffer
-        })
-        await med.save()
+        if(req.file==undefined){
+            const med=new Medication({
+                owner:req.user._id,
+                medicine:req.body.med,
+                doseInfo:req.body.dose,
+                reason: req.body.reason,
+                prescribedDate:req.body.datep,
+                prescribedEndDate:req.body.datef,
+                note: req.body.note,
+            })
+            await med.save()   
+        } else {
+            const med=new Medication({
+                owner:req.user._id,
+                medicine:req.body.med,
+                doseInfo:req.body.dose,
+                reason: req.body.reason,
+                prescribedDate:req.body.datep,
+                prescribedEndDate:req.body.datef,
+                note: req.body.note,
+                doc:req.file.buffer
+            })
+            await med.save()
+        }
         res.redirect('/alldoc')
     } catch(e){
         console.log(e)
@@ -189,15 +227,26 @@ app.get('/addImmu',auth,(req,res)=>{
 
 app.post('/addImmu',auth,upload.single('file'),async (req,res)=>{
     try{
-        const immu=new Immune({
-            owner:req.user._id,
-            vaccine:req.body.vaccine,
-            protectionagainst:req.body.protection,
-            dateTaken: req.body.date,
-            note: req.body.note,
-            doc:req.file.buffer
-        })
-        await immu.save()
+        if(req.file==undefined){
+            const immu=new Immune({
+                owner:req.user._id,
+                vaccine:req.body.vaccine,
+                protectionagainst:req.body.protection,
+                dateTaken: req.body.date,
+                note: req.body.note,
+            })
+            await immu.save()
+        } else {
+            const immu=new Immune({
+                owner:req.user._id,
+                vaccine:req.body.vaccine,
+                protectionagainst:req.body.protection,
+                dateTaken: req.body.date,
+                note: req.body.note,
+                doc:req.file.buffer
+            })
+            await immu.save()    
+        }
         res.redirect('/alldoc')
     } catch(e){
         console.log(e)
@@ -212,16 +261,28 @@ app.get('/addHospital',auth,(req,res)=>{
 
 app.post('/addHospital',auth,upload.single('file'),async (req,res)=>{
     try{
-        const hosp=new Hospital({
-            owner:req.user._id,
-            hospitalName:req.body.hospital,
-            reason:req.body.reason,
-            admissionDate: req.body.dateadmis,
-            dischargeDate:req.body.datedischarge,
-            note:req.body.note,
-            doc:req.file.buffer
-        })
-        await hosp.save()
+        if(req.file==undefined){
+            const hosp=new Hospital({
+                owner:req.user._id,
+                hospitalName:req.body.hospital,
+                reason:req.body.reason,
+                admissionDate: req.body.dateadmis,
+                dischargeDate:req.body.datedischarge,
+                note:req.body.note,
+            })
+            await hosp.save()
+        } else {
+            const hosp=new Hospital({
+                owner:req.user._id,
+                hospitalName:req.body.hospital,
+                reason:req.body.reason,
+                admissionDate: req.body.dateadmis,
+                dischargeDate:req.body.datedischarge,
+                note:req.body.note,
+                doc:req.file.buffer
+            })
+            await hosp.save()
+        }
         res.redirect('/alldoc')
     } catch(e){
         console.log(e)
@@ -230,8 +291,22 @@ app.post('/addHospital',auth,upload.single('file'),async (req,res)=>{
 })
 
 // ativities
-app.get('/activities',auth,(req,res)=>{
-    res.render('activities/activities')
+app.get('/activities',auth,async (req,res)=>{
+    try{
+        await req.user.populate({
+            path:'activities',
+            options:{
+                limit:10,
+                sort:{
+                    createdAt:-1
+                }
+            }
+        }).execPopulate()
+        res.render('activities/activities',{activities:req.user.activities})
+    } catch(e){
+        res.redirect('/dashboard')
+    }
+    
 })
 
 app.get('/newActivity',auth,(req,res)=>{
@@ -250,7 +325,6 @@ app.post('/newActivity',auth,async (req,res)=>{
         })
         await activity.save()
         res.redirect('/activities')
-        console.log('Activity Added Successfuly')
     } catch(e){
         console.log(e)
         res.redirect('/newActivity')

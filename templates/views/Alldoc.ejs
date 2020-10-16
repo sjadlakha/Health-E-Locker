@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/bootstrap-social/bootstrap-social.css"> 
     <link rel="stylesheet" href="/CSS/home_style.css">
 
-    <title>Blog</title>
+    <title>All Documents</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-sm fixed-top navbar-light">
@@ -42,14 +42,14 @@
             <% allergies.forEach((allergy)=>{%>
             <div class="card-body">
                 <div class="d-flex justify-content-between">
-                    <h5 class="card-title"><%=allergy.allergen%></h5>
-                    <% if(!allergy.doc.length==0){%>
+                    <h5 class="card-title">Allergen - <%=allergy.allergen%></h5>
+                    <% if(allergy.doc){%>
                     <a href="/alldoc/Allergy/<%=allergy._id%>">Open</a>
                     <%}%>
                 </div>
-                <p class="card-subtitle"><%=allergy.dateidentified%></p>
-                <p class="card-text"><%=allergy.reactions%></p>
-                <p class="card-text"><%=allergy.severity%></p>
+                <p class="card-subtitle">Date Identified - <%=allergy.dateidentified%></p>
+                <p class="card-text">Reactions - <%=allergy.reactions%></p>
+                <p class="card-text">Severity - <%=allergy.severity%></p>
             </div>
             <%});%>
         </div>
@@ -60,13 +60,15 @@
             <% symptoms.forEach((symptom)=>{%>
             <div class="card-body">
                 <div class="d-flex justify-content-between">
-                    <h5 class="card-title"><%=symptom.symptom%></h5>
+                    <h5 class="card-title">Symptom - <%=symptom.symptom%></h5>
+                    <% if(symptom.doc){%>
                     <a href="/alldoc/Symptom/<%=symptom._id%>">Open</a>
+                    <%}%>
                 </div>
-                <p class="card-subtitle"><%=symptom.dateOccurred%></p>
-                <p class="card-text"><%=symptom.severity%></p>
-                <p class="card-text"><%=symptom.context%></p>
-                <p class="card-text"><%=symptom.note%></p>
+                <p class="card-subtitle">Date Occurred - <%=symptom.dateOccurred%></p>
+                <p class="card-text">Severity - <%=symptom.severity%></p>
+                <p class="card-text">Context - <%=symptom.context%></p>
+                <p class="card-text">Note - <%=symptom.note%></p>
             </div>
             <%});%>
         </div>
@@ -77,13 +79,15 @@
             <% medications.forEach((medication)=>{%>
             <div class="card-body">
                 <div class="d-flex justify-content-between">
-                    <h5 class="card-title"><%=medication.medicine%></h5>
+                    <h5 class="card-title">Medicine - <%=medication.medicine%></h5>
+                    <% if(medication.doc){%>
                     <a href="/alldoc/Medication/<%=medication._id%>">Open</a>
+                    <%}%>
                 </div>
-                <p class="card-subtitle"><%=medication.prescribedDate%></p>
-                <p class="card-text"><%=medication.doseInfo%></p>
-                <p class="card-text"><%=medication.reason%></p>
-                <p class="card-text"><%=medication.note%></p>
+                <p class="card-subtitle">PrescribedDate - <%=medication.prescribedDate%></p>
+                <p class="card-text">DoseInfo - <%=medication.doseInfo%></p>
+                <p class="card-text">Reason - <%=medication.reason%></p>
+                <p class="card-text">Note - <%=medication.note%></p>
             </div>
             <%});%>
         </div>
@@ -94,11 +98,13 @@
             <% immunisations.forEach((immune)=>{%>
             <div class="card-body">
                 <div class="d-flex justify-content-between">
-                    <h5 class="card-title"><%=immune.vaccine%></h5>
+                    <h5 class="card-title">Vaccine - <%=immune.vaccine%></h5>
+                    <% if(immune.doc){%>
                     <a href="/alldoc/Immune/<%=immune._id%>">Open</a>
+                    <%}%>
                 </div>
-                <p class="card-subtitle"><%=immune.dateTaken%></p>
-                <p class="card-text"><%=immune.dateTaken%></p>
+                <p class="card-subtitle">Protection Against - <%=immune.protectionagainst%></p>
+                <p class="card-text">Date Taken - <%=immune.dateTaken%></p>
             </div>
             <%});%>
         </div>
@@ -109,11 +115,13 @@
             <% hospitals.forEach((hospital)=>{%>
             <div class="card-body">
                 <div class="d-flex justify-content-between">
-                    <h5 class="card-title"><%=hospital.hospitalName%></h5>
+                    <h5 class="card-title">Hospital Name - <%=hospital.hospitalName%></h5>
+                    <% if(hospital.doc){%>
                     <a href="/alldoc/Hospital/<%=hospital._id%>">Open</a>
+                    <%}%>
                 </div>
-                <p class="card-subtitle"><%=hospital.admissionDate%></p>
-                <p class="card-text"><%=hospital.note%></p>
+                <p class="card-subtitle">Admission Date - <%=hospital.admissionDate%></p>
+                <p class="card-text">Note - <%=hospital.note%></p>
             </div>
             <%});%>
         </div>
