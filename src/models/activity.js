@@ -10,7 +10,7 @@ const activitySchema=new mongoose.Schema({
         required: true
     },
     startDate:{
-        type: String,
+        type: Date,
         required:true
     },
     startTime: {
