@@ -8,6 +8,7 @@ const LocalStrategy = require('passport-local')
 const passportLocalMongoose=require('passport-local-mongoose')
 const expressSession = require('express-session')
 const FileType=require('file-type')
+const blogsContent = require('./api/blog')
 
 //fetching models
 const Symptom=require('./models/symptom')
@@ -334,7 +335,8 @@ app.post('/newActivity',auth,async (req,res)=>{
 
 //blog
 app.get('/blog',auth,(req,res)=>{
-    res.render('blog')
+    res.render('blog', {blogs: blogsContent})
+    // console.log(blogsContent)
     // api to be added : https://newsapi.org
 })
 
