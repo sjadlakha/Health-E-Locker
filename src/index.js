@@ -30,7 +30,7 @@ const publicDirPath= path.join(__dirname,'../public')
 const viewsDirPath=path.join(__dirname,'../templates/views')
 const partialsPath=path.join(__dirname,'../templates/partials')
 
-//setup handlebars and views directory
+//setup ejs and views directory
 app.set('view engine', 'ejs')
 app.set('views',viewsDirPath)
 
