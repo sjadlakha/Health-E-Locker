@@ -33,10 +33,13 @@
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-12 col-md-12 order-sm-first"> 
                 <div class="media "> 
-                    <img src="/img/doc-note.jpg" alt="Uthappizza" class="d-flex blog image-fluid align-self-center img-thumbnail mr-3">
+                    <img src="<%= blogs[0].urlToImage %>"  class="d-flex blog image-fluid align-self-center img-thumbnail mr-3">
                     <div class="media-body align-self-center">
-                        <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$4.99</span></h2>
-                        <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                        <h2 class="mt-0"><%= blogs[0].title %> </h2>
+                        <p class="d-none d-sm-block"><%= blogs[0].description %> </p>
+                        <p>
+                            <a href="<%= blogs[0].url %>">Click Here To Know More</a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -46,10 +49,13 @@
             <div class="col-12 col-sm-12 col-md-12"> 
                 <div class="media"> 
                     <div class="media-body align-self-center">
-                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger"> NEW</span></h2>
-                        <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                        <h2 class="mt-0"><%= blogs[1].title %></h2>
+                        <p class="d-none d-sm-block"><%= blogs[1].description %></p>
+                        <p>
+                            <a href="<%= blogs[1].url %>">Click Here To Know More</a>
+                        </p>
                     </div>
-                    <img src="/img/med-record.jpg" alt="Logo" class=" blog image-fluid">
+                    <img src="<%= blogs[1].urlToImage %>" alt="Logo" class=" blog image-fluid">
                 </div>
             </div>
         </div>
@@ -57,11 +63,14 @@
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-12 col-md-12">
                 <div class="media"> 
-                    <img src="/img/med-record.jpg" alt="Buffet" class="d-flex align-self-center blog img-thumbnail mr-3">
+                    <img src="<%= blogs[2].urlToImage %>" alt="Buffet" class="d-flex align-self-center blog img-thumbnail mr-3">
                     <div class="media-body align-self-center">
-                        <h2 class="mt-0">Alberto Somayya</h2>
-                        <h4>Executive Chef</h4>
-                        <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                        <h2 class="mt-0"><%= blogs[2].title %></h2>
+                        
+                        <p class="d-none d-sm-block"><%= blogs[2].description %> </p>
+                        <p>
+                            <a href="<%= blogs[2].url %>">Click Here To Know More</a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -69,10 +78,13 @@
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-12 col-md-12 order-sm-first"> 
                 <div class="media "> 
-                    <img src="/img/doc-note.jpg" alt="Uthappizza" class="d-flex blog image-fluid align-self-center img-thumbnail mr-3">
+                    <img src="<%= blogs[3].urlToImage %>" class="d-flex blog image-fluid align-self-center img-thumbnail mr-3">
                     <div class="media-body align-self-center">
-                        <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$4.99</span></h2>
-                        <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                        <h2 class="mt-0"><%= blogs[3].title %></h2>
+                        <p class="d-none d-sm-block"><%= blogs[3].description %></p>
+                        <p>
+                            <a href="<%= blogs[3].url %>">Click Here To Know More</a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -82,10 +94,13 @@
             <div class="col-12 col-sm-12 col-md-12"> 
                 <div class="media"> 
                     <div class="media-body align-self-center">
-                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger"> NEW</span></h2>
-                        <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                        <h2 class="mt-0"><%= blogs[4].title %></h2>
+                        <p class="d-none d-sm-block"><%= blogs[4].description %></p>
+                        <p>
+                            <a href="<%= blogs[4].url %>">Click Here To Know More</a>
+                        </p>
                     </div>
-                    <img src="/img/med-record.jpg" alt="Logo" class=" blog image-fluid">
+                    <img src="<%= blogs[3].urlToImage %>"  class=" blog image-fluid">
                 </div>
             </div>
         </div>
@@ -93,11 +108,14 @@
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-12 col-md-12">
                 <div class="media"> 
-                    <img src="/img/med-record.jpg" alt="Buffet" class="d-flex align-self-center blog img-thumbnail mr-3">
+                    <img src="<%= blogs[5].urlToImage %>" class="d-flex align-self-center blog img-thumbnail mr-3">
                     <div class="media-body align-self-center">
-                        <h2 class="mt-0">Alberto Somayya</h2>
-                        <h4>Executive Chef</h4>
-                        <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                        <h2 class="mt-0"><%= blogs[5].title %></h2>
+                        
+                        <p class="d-none d-sm-block"><%= blogs[5].description %></p>
+                        <p>
+                            <a href="<%= blogs[5].url %>">Click Here To Know More</a>
+                        </p>
                     </div>
                 </div>
             </div>
