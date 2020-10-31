@@ -17,6 +17,7 @@ const Medication=require('./models/medication')
 const Immune=require('./models/immune')
 const Hospital=require('./models/hospital')
 const Activity=require('./models/activity')
+const Feedback=require('./models/feedback')
 const { runInNewContext } = require('vm')
 
 //fetching middlewares
@@ -341,8 +342,28 @@ app.get('/blog',auth,(req,res)=>{
 })
 
 //contactus
-app.get('/contactus',(req,res)=>{
+app.get('/contactus', auth,(req,res)=>{
     res.render('contactus')
+})
+
+app.post('/contactus', auth,async (req,res)=>{
+    try{
+        const feedback=new Feedback({
+            owner: req.user._id,
+            firstName:req.body.firstname,
+            lastName:req.body.lastname,
+            areaCode:req.body.areacode,
+            telNum:req.body.telnum,
+            email:req.body.email,
+            feedback:req.body.desc
+        })
+        await feedback.save()
+        res.redirect('/contactus')
+
+    } catch (e) {
+        alert("Please enter all the details!")
+    }
+
 })
 
 //tutorial
